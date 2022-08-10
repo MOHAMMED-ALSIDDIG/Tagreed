@@ -290,6 +290,7 @@ header ul li a:hover::before {
 }
 .slide-track {
   display: flex;
+  flex-direction: row-reverse;
   width: calc(350px * 41);
   animation: scroll 60s linear infinite;
 }
@@ -298,10 +299,10 @@ header ul li a:hover::before {
 }
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(calc(-500px * 4));
   }
   100% {
-    transform: translateX(calc(-500px * 4));
+    transform: translateX(0);
   }
 }
 .feedback .slide {
